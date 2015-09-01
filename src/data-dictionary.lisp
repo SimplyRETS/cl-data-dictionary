@@ -1,6 +1,7 @@
 (in-package :cl-user)
 (defpackage data-dictionary
-  (:use :cl))
+  (:use :cl)
+  (:export :-main))
 (in-package :data-dictionary)
 
 ;; code:
