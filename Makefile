@@ -9,7 +9,7 @@
 # - Set the CSV variable in this Makefile to the path of your reso-data-dictionary.csv
 # - Run `make` to generate a markdown version in the CWD
 
-CSV=/path/to/reso-data-dictionary.1.4.csv
+CSV=$(HOME)/docs/reso/reso-data-dictionary.1.4.csv
 
 markdown:
 	sbcl --noinform --non-interactive \
