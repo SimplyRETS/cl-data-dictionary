@@ -1,7 +1,47 @@
-* Data-Dictionary 
+* cl-data-dictionary
+
+Convert the [[http://www.reso.org/data-dictionary][RESO Data Dictionary]] to Markdown.
 
 ** Usage
 
+*** Makefile
+    The Makefile provides a single command =markdown=. First, set the
+    variable =CSV= to the path of your local copy of RESO's Data
+    Dictionary. Then:
+
+    =make markdown=
+
+    data-dictionary.markdown will be output in the current working
+    directory.
+
+*** SBCL REPL/Slime
+
+    In a CL REPL:
+
+   #+BEGIN_SRC lisp
+     CL-USER> (load "data-dictionary.asd")
+     CL-USER> (ql:quickload :data-dictionary)
+     CL-USER> (data-dictionary:-main #p"/path/to/csv")
+   #+END_SRC
+
+    data-dictionary.markdown will be output in the current working
+    directory.
+
 ** Dependencies
+   =cl-data-dictionary= is distributed as a Common Lisp library,
+   specifically SBCL (but should run under other implementation). As
+   such, there are a couple of requirements:
+
+   - SBCL (or other CL)
+   - Quicklisp
+
+     Everything else will take care of itself.
 
 ** Installation
+
+   =git clone git@github.com/SimplyRETS/cl-data-dictionary=
+
+** License
+   This code is licensed under MIT.
+
+   Copyright 2015 (c) SimplyRETS, Inc
