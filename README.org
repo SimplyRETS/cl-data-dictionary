@@ -29,17 +29,17 @@ Convert the [[http://www.reso.org/data-dictionary][RESO Data Dictionary]] to Mar
 
 ** Dependencies
    =cl-data-dictionary= is distributed as a Common Lisp library,
-   specifically SBCL (but should run under other implementation). As
+   specifically SBCL (but should run under other implementations). As
    such, there are a couple of requirements:
 
    - SBCL (or other CL)
    - Quicklisp
 
-     Everything else will take care of itself.
+   Everything else will take care of itself.
 
 ** Installation
 
-   =git clone git@github.com/SimplyRETS/cl-data-dictionary=
+   =git clone git@github.com:SimplyRETS/cl-data-dictionary=
 
 ** License
    This code is licensed under MIT.
